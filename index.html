@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+<!-- https://getbootstrap.com/docs/4.0/layout/grid/ bootstrap column used that is similar and inspired bylab 4 bootstrap columns -->
+        <img id="zoomedpicture"></img>
+
+        <div id="buttons">
+            <button id="previous">◄</button>
+            <button id="next">►</button>
+            <button id="close">&#10060</button>
+        </div>
+
+      <div id="container">
+          <div id="row">
+            <div id="col"><img src="pic4.jpg" id="pic4"></div>
+            <div id="col"><img src="pic3.jpg" id="pic3"></div>
+            <div id="col"><img src="pic2.png" id="pic2"></div>
+            <div id="col"><img src="pic1.png" id="pic1"></div>
+          </div>
+          <div id="row">
+              <div id="col"><img src="pic8.jpg" id="pic8"></div>
+              <div id="col"><img src="pic7.jpg" id="pic7"></div>
+              <div id="col"><img src="pic6.jpg" id="pic6"></div>
+              <div id="col"><img src="pic5.jpg" id="pic5"></div>
+          </div>
+          <div id="row">
+              <div id="col"><img src="pic12.jpg"  id="pic12"></div>
+              <div id="col"><img src="pic11.jpg"  id="pic11"></div>
+              <div id="col"><img src="pic10.jpg" id="pic10"></div>
+              <div id="col"><img src="pic9.jpg"  id="pic9"></div>
+          </div>
+
+      </div>
+      </body>
+
+
+
+          <script>
+            var picNumberArray = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7", "pic8", "pic9", "pic10", "pic11", "pic12", "pic12"]
+            var picArray = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg", "pic6.jpg", "pic7.jpg", "pic8.jpg", "pic9.jpg", "pic10.jpg", "pic11.jpg", "pic12.jpg", "pic12.jpg"]
+            var imageNumber = picNumberArray[0];
+            var m =1;
+
+            function zoom1() {
+              document.getElementById("zoomedpicture").src = picArray[0];
+              document.getElementById("zoomedpicture").style.display = "block";
+              document.getElementById("buttons").style.display = "block";
+              document.getElementById("container").style.display= "none";
+              m=1;
+
+            }
+             document.getElementById("pic1").addEventListener("click", zoom1);
+
+             function zoom2() {
+
+               // https://stackoverflow.com/questions/14422898/how-to-get-an-elements-id-from-event-target
+               document.getElementById("zoomedpicture").src = picArray[1];
+               document.getElementById("zoomedpicture").style.display = "block";
+               document.getElementById("buttons").style.display = "block";
+               document.getElementById("container").style.display= "none";
+               event.target.id = picNumberArray[1];
+               imageNumber = event.target.id;
+               m=2;
+
+             }
+              document.getElementById("pic2").addEventListener("click", zoom2);
+
+              function zoom3() {
+
+                document.getElementById("zoomedpicture").src = picArray[2];
+                document.getElementById("zoomedpicture").style.display = "block";
+                document.getElementById("buttons").style.display = "block";
+                document.getElementById("container").style.display= "none";
+                event.target.id = picNumberArray[2];
+                imageNumber = event.target.id;
+                m=3;
+
+              }
+               document.getElementById("pic3").addEventListener("click", zoom3);
+
+               function zoom4() {
+                 document.getElementById("zoomedpicture").src = picArray[3];
+                 document.getElementById("zoomedpicture").style.display = "block";
+                 document.getElementById("buttons").style.display = "block";
+                 document.getElementById("container").style.display= "none";
+                 event.target.id = picNumberArray[3];
+                 imageNumber = event.target.id;
+                 m=4;
+
+               }
+                document.getElementById("pic4").addEventListener("click", zoom4);
+
+                function zoom5() {
+                  document.getElementById("zoomedpicture").src = picArray[4];
+                  document.getElementById("zoomedpicture").style.display = "block";
+                  document.getElementById("buttons").style.display = "block";
+                  document.getElementById("container").style.display= "none";
+                  event.target.id = picNumberArray[4];
+                  imageNumber = event.target.id;
+                  m=5;
+
+                }
+                 document.getElementById("pic5").addEventListener("click", zoom5);
+
+                 function zoom6() {
+                   document.getElementById("zoomedpicture").src = picArray[5];
+                   document.getElementById("zoomedpicture").style.display = "block";
+                   document.getElementById("buttons").style.display = "block";
+                   document.getElementById("container").style.display= "none";
+                   event.target.id = picNumberArray[5];
+                   imageNumber = event.target.id;
+                   m=6;
+
+                 }
+                  document.getElementById("pic6").addEventListener("click", zoom6);
+
+                  function zoom7() {
+                    document.getElementById("zoomedpicture").src = picArray[6];
+                    document.getElementById("zoomedpicture").style.display = "block";
+                    document.getElementById("buttons").style.display = "block";
+                    document.getElementById("container").style.display= "none";
+                    event.target.id = picNumberArray[6];
+                    imageNumber = event.target.id;
+                  }
+                   document.getElementById("pic7").addEventListener("click", zoom7);
+
+                   function zoom8() {
+                     document.getElementById("zoomedpicture").src = picArray[7];
+                     document.getElementById("zoomedpicture").style.display = "block";
+                     document.getElementById("buttons").style.display = "block";
+                     document.getElementById("container").style.display= "none";
+                     event.target.id = picNumberArray[7];
+                     imageNumber = event.target.id;
+                   }
+                    document.getElementById("pic8").addEventListener("click", zoom8);
+
+                    function zoom9() {
+                      document.getElementById("zoomedpicture").src = picArray[8];
+                      document.getElementById("zoomedpicture").style.display = "block";
+                      document.getElementById("buttons").style.display = "block";
+                      document.getElementById("container").style.display= "none";
+                      event.target.id = picNumberArray[8];
+                      imageNumber = event.target.id;
+                    }
+                     document.getElementById("pic9").addEventListener("click", zoom9);
+
+                     function zoom10() {
+                       document.getElementById("zoomedpicture").src = picArray[9];
+                       document.getElementById("zoomedpicture").style.display = "block";
+                       document.getElementById("buttons").style.display = "block";
+                       document.getElementById("container").style.display= "none";
+                       event.target.id = picNumberArray[9];
+                       imageNumber = event.target.id;
+                     }
+                      document.getElementById("pic10").addEventListener("click", zoom10);
+
+                      function zoom11() {
+                        document.getElementById("zoomedpicture").src = picArray[10];
+                        document.getElementById("zoomedpicture").style.display = "block";
+                        document.getElementById("buttons").style.display = "block";
+                        document.getElementById("container").style.display= "none";
+                        event.target.id = picNumberArray[10];
+                        imageNumber = event.target.id;
+                      }
+                       document.getElementById("pic11").addEventListener("click", zoom11);
+
+
+                       function zoom12() {
+                         document.getElementById("zoomedpicture").src = picArray[11];
+                         document.getElementById("zoomedpicture").style.display = "block";
+                         document.getElementById("buttons").style.display = "block";
+                         document.getElementById("container").style.display= "none";
+                         event.target.id = picNumberArray[11];
+                         imageNumber = event.target.id;
+                       }
+                        document.getElementById("pic12").addEventListener("click", zoom12);
+
+            document.getElementById("close").addEventListener('click', function()
+            {
+              document.getElementById("zoomedpicture").style.display = "none";
+              document.getElementById("buttons").style.display = "none";
+              document.getElementById("container").style.display= "inline";
+            });
+            document.getElementById("next").addEventListener('click', function()
+            {
+
+              if (imageNumber ==picNumberArray[10]) {
+                imageNumber = picNumberArray[11];
+                document.getElementById("zoomedpicture").src =  picArray[11];
+              }
+              if (imageNumber ==picNumberArray[9]) {
+                imageNumber = picNumberArray[10];
+                document.getElementById("zoomedpicture").src = picArray[10];
+              }
+              if (imageNumber ==picNumberArray[8]) {
+                imageNumber = picNumberArray[9];
+                document.getElementById("zoomedpicture").src = picArray[9];
+              }
+              if (imageNumber ==picNumberArray[7]) {
+                imageNumber = picNumberArray[8];
+                document.getElementById("zoomedpicture").src = picArray[8];
+              }
+              if (imageNumber ==picNumberArray[6]) {
+                imageNumber = picNumberArray[7];
+                document.getElementById("zoomedpicture").src = picArray[7];
+              }
+              if (imageNumber ==picNumberArray[5]) {
+                imageNumber = picNumberArray[6];
+                document.getElementById("zoomedpicture").src = picArray[6];
+              }
+              if (imageNumber ==picNumberArray[4]) {
+                imageNumber = picNumberArray[5];
+                document.getElementById("zoomedpicture").src = picArray[5];
+              }
+              if (imageNumber ==picNumberArray[3]) {
+                imageNumber = picNumberArray[4];
+                document.getElementById("zoomedpicture").src = picArray[4];
+              }
+              if (imageNumber ==picNumberArray[2]) {
+                imageNumber = picNumberArray[3];
+                document.getElementById("zoomedpicture").src = picArray[3];
+              }
+              if (imageNumber ==picNumberArray[1]) {
+                imageNumber = picNumberArray[2];
+                document.getElementById("zoomedpicture").src = picArray[2];
+              }
+              if (imageNumber ==picNumberArray[0]) {
+                imageNumber = picNumberArray[1];
+                document.getElementById("zoomedpicture").src = picArray[1];
+              }
+
+            });
+            document.getElementById("previous").addEventListener('click', function()
+            {
+
+              if (imageNumber ==picNumberArray[1]) {
+                imageNumber = picNumberArray[0];
+                document.getElementById("zoomedpicture").src = picArray[0];
+              }
+              if (imageNumber ==picNumberArray[2]) {
+                imageNumber = picNumberArray[1];
+                document.getElementById("zoomedpicture").src = picArray[1];
+              }
+              if (imageNumber ==picNumberArray[3]) {
+                imageNumber = picNumberArray[2];
+                document.getElementById("zoomedpicture").src = picArray[2];
+              }
+              if (imageNumber ==picNumberArray[4]) {
+                imageNumber = picNumberArray[3];
+                document.getElementById("zoomedpicture").src = picArray[3];
+              }
+              if (imageNumber ==picNumberArray[5]) {
+                imageNumber = picNumberArray[4];
+                document.getElementById("zoomedpicture").src = picArray[4];
+              }
+              if (imageNumber ==picNumberArray[6]) {
+                imageNumber = picNumberArray[5];
+                document.getElementById("zoomedpicture").src = picArray[5];
+              }
+              if (imageNumber ==picNumberArray[7]) {
+                imageNumber = picNumberArray[6];
+                document.getElementById("zoomedpicture").src = picArray[6];
+              }
+              if (imageNumber ==picNumberArray[8]) {
+                imageNumber = picNumberArray[7];
+                document.getElementById("zoomedpicture").src = picArray[7];
+              }
+              if (imageNumber ==picNumberArray[9]) {
+                imageNumber = picNumberArray[8];
+                document.getElementById("zoomedpicture").src = picArray[8];
+              }
+              if (imageNumber ==picNumberArray[10]) {
+                imageNumber = picNumberArray[9];
+                document.getElementById("zoomedpicture").src = picArray[9];
+              }
+              if (imageNumber ==picNumberArray[11]) {
+                imageNumber = picNumberArray[10];
+                document.getElementById("zoomedpicture").src = picArray[10];
+              }
+
+
+            });
+
+
+        </script>
+</html>

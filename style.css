@@ -1,0 +1,59 @@
+#body {
+  background-color: #1a237e;
+}
+* {
+  background-color: #1a237e;
+}
+#container
+{
+  position: relative;
+  left:  -40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+#row, #col
+{
+  padding: 20px;
+}
+
+#col
+{
+  float: right;
+}
+
+#container img:hover
+{
+  box-shadow: 5px 10px grey;
+}
+
+#zoomedpicture
+{
+    width: 100%;
+    height: 700px;
+}
+
+#zoomedpicture, #buttons
+{
+    display: none;
+    height: 550px;
+}
+#buttons {
+  position: relative;
+  top: 30px;
+  display: none;
+  height: 50px;
+}
+button
+{
+    border: 1px solid;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#container img {
+  height: 299px;
+  width: 499px;
+}
